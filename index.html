@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ALLINONE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>KR MART </h1>
+    <div class="filters">
+      <button onclick="filterProducts('all')">All</button>
+      <button onclick="filterProducts('clothes')">Clothes</button>
+      <button onclick="filterProducts('shoes')">Shoes</button>
+      <button onclick="filterProducts('electronics')">Electronics</button>
+      <button onclick="filterProducts('gold')">Jewllery</button>
+      <button onclick="filterProducts('fashion')">Fashion</button>
+    </div>
+  </header>
+
+  <section class="gallery" id="product-gallery">
+    <!-- Products will be injected by JS -->
+  </section>
+
+  <!-- Modal -->
+  <div id="productModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img id="modal-img" src="" alt="">
+      <h2 id="modal-title"></h2>
+      <p id="modal-desc"></p>
+      <p class="price" id="modal-price"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
